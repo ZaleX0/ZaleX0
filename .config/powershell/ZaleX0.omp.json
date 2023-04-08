@@ -1,0 +1,90 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "version": 2,
+    "final_space": true,
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "git",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0b6",
+                    "trailing_diamond": "\ue0b4",
+                    "background": "#ffffff",
+                    "foreground": "#063c88",
+                    "template": "\ueba1 {{.RepoName}}"
+                },
+                {
+                    "type": "git",
+                    "style": "diamond",
+                    "foreground": "#ffffff",
+                    "template": " {{.HEAD}}"
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "git",
+                    "style": "plain",
+                    "template": "a\b"
+                }
+            ]
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "path",
+                    "style": "diamond",
+                    "leading_diamond": "\ue0b6",
+                    "background": "#063c88",
+                    "foreground": "#ffffff",
+                    "template": "{{.Path}} ",
+                    "properties": {
+                        "home_icon": "\uf015",
+                        "folder_icon": "\uf07c",
+                        "folder_separator_icon": " \ue0b1 ",
+                        "max_depth": 3,
+                        "style": "agnoster_short"
+                    }
+                },
+                {
+                    "type": "text",
+                    "style": "powerline",
+                    "powerline_symbol": "\ue0b0",
+                    "background": "#367fe6",
+                    "foreground": "#ffffff",
+                    "template": " \ue683 "
+                }
+            ]
+        },
+        {
+            "type": "rprompt",
+            "alignment": "right",
+            "segments": [
+                {
+                    "type": "spotify",
+                    "style": "plain",
+                    "foreground": "#1BD760",
+                    "template": "\uf1bc d-_-b "
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "foreground": "#ffffff",
+                    "properties": {
+                        "time_format": "03:04:05 PM"
+                    },
+                    "template": "{{ .CurrentDate | date .Format }}"
+                }
+            ]
+        }
+    ]
+}
