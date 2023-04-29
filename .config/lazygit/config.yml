@@ -1,0 +1,24 @@
+# Put this file in %appdata%/lazygit
+gui:
+  language: 'en'
+  showIcons: true
+  theme:
+    activeBorderColor:
+      - white
+      - bold
+    inactiveBorderColor:
+      - '#367fe6'
+    optionsTextColor:
+      - white
+    selectedLineBgColor:
+      - '#367fe6'
+    selectedRangeBgColor:
+      - '#367fe6'
+    cherryPickedCommitBgColor:
+      - cyan
+    cherryPickedCommitFgColor:
+      - blue
+    unstagedChangesColor:
+      - magenta
+    defaultFgColor:
+      - default
