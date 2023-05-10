@@ -1,15 +1,16 @@
-# Put this file in %appdata%/lazygit
+# Put this file in %APPDATA%/lazygit
+notARepository: 'skip'
 gui:
   language: 'en'
   showIcons: true
   theme:
     activeBorderColor:
-      - white
+      - yellow
       - bold
     inactiveBorderColor:
       - '#367fe6'
     optionsTextColor:
-      - white
+      - '#367fe6'
     selectedLineBgColor:
       - '#367fe6'
     selectedRangeBgColor:
@@ -21,4 +22,4 @@ gui:
     unstagedChangesColor:
       - magenta
     defaultFgColor:
-      - default
+      - white
