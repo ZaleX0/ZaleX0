@@ -3,6 +3,7 @@ notARepository: 'skip'
 gui:
   language: 'en'
   showIcons: true
+  mouseEvents: false
   theme:
     activeBorderColor:
       - yellow
